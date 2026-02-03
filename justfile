@@ -5,7 +5,7 @@ default:
 
 # Create or synchronize the complete local development environment.
 postclone:
-    uv sync --all-groups --all-extras
+    uv sync --python "$(command -v python3)" --all-groups --all-extras
 
 # Synchronize the default project and development dependencies.
 sync:
